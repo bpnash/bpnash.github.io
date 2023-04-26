@@ -1,0 +1,344 @@
+/* From fonts.google.com open sans (light 300 & regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Text & Background colours */
+
+/* .text-primary {
+  color: #3db9b9;
+} */
+.text-primary {
+  color: #29f8f8;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p,
+q {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #29f8f8 2px solid;
+}
+
+/* Both need to be true */
+.navbar a.selected {
+  color: #29f8f8;
+  font-weight: bold;
+}
+.navbar ul {
+  display: flex;
+}
+
+/* Selects the logo & title in the navbar */
+.navbar .logo {
+  font-weight: 400;
+  color: #29f8f8;
+}
+
+.logo {
+  margin-top: 15px 0px;
+}
+
+/* Hero Section */
+
+.hero {
+  background: url('../images/matrix-code.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0, 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p,
+q {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 10px;
+}
+
+.hero::before {
+  /* initially as an empty string */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  /* rgba, is black with opacity of 0.6 */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero .navbar nav {
+  position: relative;
+  z-index: 10;
+}
+.content h1,
+q {
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro section */
+
+.intro {
+  padding: 30px;
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* height: 100%; */
+  /* height: 30vh; */
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px 10px 30px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* PROJECT SPECIFIC */
+
+/* Hero Projects */
+.hero.project {
+  background: url('../images/matrix-code.jpg') no-repeat center center/cover;
+  height: 30vh;
+  position: relative;
+  color: #fff;
+}
+
+.project h2 {
+  font-weight: 500;
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 30px;
+  background-color: #333;
+  color: #29f8f8;
+}
+
+.project p,
+ul {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.project p {
+  margin: 10px 30px 10px 30px;
+}
+
+.project ul {
+  margin: 10px 30px 10px 50px;
+}
+/* 
+.project-row-column {
+  display: flex;
+}
+
+.project-row-column .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30vh;
+}
+
+.project-row-column .col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.project-row-column .row .column-1,
+.project-row-column .row .column-2 {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; 
+opacity: 0.8;
+  width: 100%;
+  height: 70px;
+}
+
+.nav ul {
+  display: flex;
+} */
+
+/* NOTES */
+
+/* justify-content: center; */
+/* centres the flex items in the container */
+
+/* align-items: center; */
+/* Vertically aligns items in the centre of the container */
+
+/* justify-content & align items perfectly centers in the container */
+
+/* align-content: center; */
+/* aligns flex LINES when items WRAP  */
+
+/* CONTAINER FLEX */
+.container {
+  display: flex;
+}
+
+.side-1 {
+  display: flex;
+  flex-direction: column;
+  /* this is required if a child element is position: absolute */
+  position: relative;
+  background-color: #29f8f8;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.side-1 p {
+  font-size: 1.9rem;
+}
+
+.side-1 nav {
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  justify-content: center;
+}
+
+.side-1 ul {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+.side-1 li {
+  color: #fff;
+  padding: 10px 30px;
+  margin: 0 5px;
+}
+
+.side-2 {
+  display: flex;
+  background-color: #0284d0;
+  margin: 0px;
+  padding: 10px;
+  width: 50%;
+  height: 20vh;
+  justify-content: right;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  /* only works on text outside an element */
+  /* font-size: 30px; */
+}
+
+.side-2 p {
+  font-size: 1.9rem;
+  color: #fff;
+}
